@@ -6,11 +6,23 @@ export interface ToolInput {
   hasFunding?: boolean;
 }
 
+export interface InfoBox {
+  text: string;
+  variant: "blue" | "teal";
+}
+
 export interface Coverage {
   id: string;
   name: string;
   description: string;
   category: "essential" | "additional";
+  icon: "monitor" | "users" | "clipboard" | "shield" | "network" | "briefcase" | "scale";
+  iconBg: string;
+  iconColor: string;
+  commonCoverages: string[];
+  whyYouNeedThis?: string[];
+  exclusions?: string[];
+  infoBox?: InfoBox;
 }
 
 export type Industry = "software" | "law" | "other";

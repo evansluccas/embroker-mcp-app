@@ -11,9 +11,36 @@ html, body {
   font-size: 16px;
   line-height: 1.5;
   background-color: #ffffff;
-  color: #1a1a2e;
+  color: #1A1A1A;
 }
 
 #root {
   min-height: 100vh;
+}
+
+a {
+  color: #6B5CE7;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive grid - single column on mobile */
+@media (max-width: 600px) {
+  .coverage-grid {
+    grid-template-columns: 1fr !important;
+  }
+}
+
+/* Select button hover effect */
+.select-btn {
+  transition: all 0.2s ease;
+}
+
+.select-btn:hover {
+  background-color: #6B5CE7 !important;
+  color: white !important;
+  border-color: #6B5CE7 !important;
 }
